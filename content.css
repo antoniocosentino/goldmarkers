@@ -1,0 +1,7 @@
+/* Gmail currently places the icon after the tooltip inside the switch.
+ * Attribute selectors avoid account-specific classes and translated labels.
+ * Keep the state in the selector so unmarking a message restores Gmail's style.
+ */
+[role="switch"][data-is-important="true"] > div:last-child {
+  background-image: url("chrome-extension://__MSG_@@extension_id__/assets/important-yellow.png") !important;
+}

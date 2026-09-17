@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Gmail Gold Importance Markers",
+  "version": "0.1.0",
+  "description": "Restore gold importance markers in Gmail.",
+  "content_scripts": [
+    {
+      "matches": ["https://mail.google.com/*"],
+      "css": ["content.css"],
+      "run_at": "document_start"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["assets/important-yellow.png"],
+      "matches": ["https://mail.google.com/*"]
+    }
+  ]
+}
