@@ -1,4 +1,4 @@
-# Gmail Gold Importance Markers
+# Gmail Gold Markers
 
 A minimal Manifest V3 Chrome extension that restores Gmail's gold importance
 markers. It injects one stylesheet on `https://mail.google.com/*` and uses a
@@ -42,7 +42,8 @@ Chrome may display a site-access warning because its stylesheet modifies Gmail.
 - Confirm tooltips, keyboard interaction, and marking messages still work.
 - Disable the extension and reload Gmail to confirm the original appearance returns.
 
-Live Gmail behavior still needs validation using signed-in accounts.
+The initial version has been reported working in the user's Gmail account.
+The broader checks above remain the pre-release validation checklist.
 
 ## Asset provenance
 
