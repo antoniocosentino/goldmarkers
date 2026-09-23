@@ -4,7 +4,13 @@ A minimal Manifest V3 Chrome extension that restores Gmail's gold importance
 markers. It injects one stylesheet on `https://mail.google.com/*` and uses a
 bundled image. No JavaScript, backend, analytics, or Gmail API access.
 
-## Load into Chrome
+
+  ![Gmail Gold Markers](docs/images/og-image.png)
+
+## Install it via the Chrome Web Store:
+[https://chromewebstore.google.com/detail/ckalmgcoepgkpojihmfhflbdmfjbekjf ](https://chromewebstore.google.com/detail/ckalmgcoepgkpojihmfhflbdmfjbekjf?utm_source=github )
+
+### Or install it manually:
 
 1. Open `chrome://extensions`.
 2. Enable **Developer mode**.
@@ -32,20 +38,8 @@ The image is exposed only to Gmail through `web_accessible_resources`. The
 extension makes no image download at runtime and does not read or transmit email.
 Chrome may display a site-access warning because its stylesheet modifies Gmail.
 
-## Manual validation in Gmail
 
-- Check an account with blue markers: important conversations should become gold.
-- Check an account with existing gold markers for visual regressions.
-- Toggle importance off and on: unimportant markers should retain Gmail's style.
-- Navigate between inbox, search results, and conversations; load more messages.
-- Check light and dark themes and different display densities.
-- Confirm tooltips, keyboard interaction, and marking messages still work.
-- Disable the extension and reload Gmail to confirm the original appearance returns.
-
-The initial version has been reported working in the user's Gmail account.
-The broader checks above remain the pre-release validation checklist.
-
-## Asset provenance
+## Asset disclaimer
 
 `assets/important-yellow.png` is the original 20 × 20 PNG downloaded from Google:
 
