@@ -26,13 +26,23 @@ restore Gmail's own colors.
 `content.css` selects the final direct `div` child of
 `[role="switch"][data-is-important="true"]` and replaces only its background
 image. Gmail retains control of size, position, clicks, tooltips, and importance
-state. CSS also applies to matching elements inserted during navigation.
+state. In message view, it recolors the inline SVG's filled importance path gold
+(`#fbbc04`), preserving the original vector shape. CSS also applies to matching
+elements inserted during navigation.
 
 The selector avoids Gmail's variable class names and localized accessible labels.
 It assumes the icon is the final direct `div` child, as in the supplied Gmail
-markup. Gmail's internal DOM is not a public API; different layouts or future
-changes may require a selector update. This initial version covers these
-importance switches, not every importance-related icon in Gmail's sidebar or menus.
+markup. The message-view selector matches the exact filled SVG path inside a
+labeled button, rather than its class or label text. Outline icons do not match.
+Gmail's internal DOM is not a public API; changes to its layout or SVG path may
+require a selector update. Other importance icons in sidebars or menus are not
+explicitly supported.
+
+## Build the extension ZIP
+
+Run `python3 scripts/package.py`. The archive is written to `dist/` using the
+version in `manifest.json`. Only explicitly listed extension files are included;
+README images in `docs/` and other repository files are excluded.
 
 The image is exposed only to Gmail through `web_accessible_resources`. The
 extension makes no image download at runtime and does not read or transmit email.

@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Gmail Gold Markers",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Restore gold importance markers in Gmail.",
   "icons": {
     "16": "assets/icon-16.png",

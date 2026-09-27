@@ -5,3 +5,11 @@
 [role="switch"][data-is-important="true"] > div:last-child {
   background-image: url("chrome-extension://__MSG_@@extension_id__/assets/important-yellow.png") !important;
 }
+
+/* Message view uses an inline SVG. Match the filled importance glyph itself:
+ * no translated labels or account-specific classes, and no outline recoloring.
+ * If Gmail changes this path, update the selector from its new markup.
+ */
+button[aria-label] svg[viewBox="0 -960 960 960"] path[d="M96-192L312-480L96-768H588q17,0 32,7.5T646-739L840-480L646-221q-11,14-26,21.5T588-192H96Z"] {
+  fill: #fbbc04 !important;
+}

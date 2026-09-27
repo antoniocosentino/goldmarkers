@@ -14,6 +14,7 @@ Prefer Gmail's gold importance markers? Gmail Gold Markers replaces the blue
 important-message markers with gold ones.
 
 - Works automatically when you open Gmail.
+- Restores gold markers in both the message list and individual message view.
 - Preserves Gmail's importance controls and tooltips.
 - Uses a bundled icon, with no external image downloads.
 - No settings or additional account required.
@@ -63,7 +64,7 @@ comparison. No extension-specific login or credentials are required.
 - Small promotional image: 440 x 280.
 - Developer account registration, contact details, and 2-Step Verification.
 - Complete the dashboard's privacy declarations and distribution options.
-- Upload `dist/gmail-gold-markers-0.1.0.zip`. It contains only manifest.json,
+- Upload `dist/gmail-gold-markers-0.1.1.zip` (build with `python3 scripts/package.py`). It contains only manifest.json,
   content.css, and the required assets, with manifest.json at the ZIP root.
   Screenshots and promotional images are uploaded separately in the store listing.
 
